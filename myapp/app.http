@@ -15,3 +15,7 @@ Content-Type: application/json
     "username":"nagendra",
     "password": "nag@123"
 }
+
+###
+
+GET http://localhost:3009/

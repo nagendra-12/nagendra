@@ -28,6 +28,10 @@ const initializeDBAndServer = async () => {
 };
 initializeDBAndServer();
 
+app.get("/", async (request, response) => {
+  response.send("Hello World!")
+})
+
 app.post("/users/", async (request, response) => {
     const { username, password } = request.body;
     const hashedPassword = await bcrypt.hash(password, 10);
